@@ -7,10 +7,50 @@
     <title>Skynox</title>
     <link rel="stylesheet" href="Landing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="item">
-        <img class="sofa" src="https://www.costco.co.uk/medias/sys_master/images/hff/hdf/15782930874398.jpg"/>
+        <div class="image">
+            <div class="carousel">
+                <img class="Slides" src="https://www.danielstores.co.uk/images/ashwood-designs-maison-corner-sofa-p351-848_image.jpg" style="width:100%">
+                <img class="Slides" src="https://images-na.ssl-images-amazon.com/images/I/7173g5rSwAL._SX425_.jpg" style="width:100%">
+                <img class="Slides" src="https://images-na.ssl-images-amazon.com/images/I/71vkir3wegL._SL1100_.jpg" style="width:100%">
+                <img class="Slides" src="https://f1af951e8abcbc4c70b9-9997fa854afcb64e87870c0f4e867f1d.lmsin.net/1000006470435-1000006470434_01-750-1.jpg" style="width:100%">
+                <img class="Slides" src="https://damroindia.com/media/catalog/product/cache/6/image/1200x1200/2436cecc84406ef509b9625574f21c9d/1/_/1_2_4.png" style="width:100%">
+                <button class="navigate left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="navigate right" onclick="plusDivs(1)">&#10095;</button>
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+                    
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("Slides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                    }
+                </script>
+            </div>
+            <div class="sofa">
+                <img style="width: 80px;" src="https://www.danielstores.co.uk/images/ashwood-designs-maison-corner-sofa-p351-848_image.jpg" >
+                <img style="width: 80px;" src="https://images-na.ssl-images-amazon.com/images/I/7173g5rSwAL._SX425_.jpg" >
+                <img style="width: 80px;" src="https://images-na.ssl-images-amazon.com/images/I/71vkir3wegL._SL1100_.jpg" >
+                <img style="width: 80px;" src="https://f1af951e8abcbc4c70b9-9997fa854afcb64e87870c0f4e867f1d.lmsin.net/1000006470435-1000006470434_01-750-1.jpg" >
+                <img style="width: 80px;" src="https://damroindia.com/media/catalog/product/cache/6/image/1200x1200/2436cecc84406ef509b9625574f21c9d/1/_/1_2_4.png" >
+            </div>
+        </div>
+        <!-- <img class="sofa" src="https://www.costco.co.uk/medias/sys_master/images/hff/hdf/15782930874398.jpg"/> -->
         <div class="details">
             <h1>Upholstered Sofa</h1>
             <h3>Kyara Upholstered Standard bed <br/>by Zipcode Design</h3>
@@ -32,16 +72,23 @@
     </div>
     <div class="footer">
         <div class="footer_content">
-            <h3>Secure Payment</h3>
-            <p>Don't worry your money is in secure places </p>
+            <h3>
+                <i class="fa fa-money"></i>
+                Secure Payment</h3>
+            <p style="padding: 0 18px;">Don't worry your money is in secure places </p>
         </div>
         <div class="footer_content">
-            <h3>Fast & Free Delivery</h3>
-            <p>Home delivery $15. For free delivery order over $250</p>
+            <h3>
+                <i class="fa fa-truck"></i>
+                Fast & Free Delivery</h3>
+            <p style="padding: 0 18px;">Home delivery $15. For free delivery order over $250</p>
         </div>
         <div class="footer_content">
-            <h3>Return Policy</h3>
-            <p>No hassle return policy</p>
+            <h3>
+                <i class="fa fa-undo"></i>
+                Return Policy
+            </h3>
+            <p style="padding: 0 18px;">No hassle return policy</p>
         </div>
 
     </div>
