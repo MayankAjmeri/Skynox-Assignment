@@ -1,0 +1,44 @@
+body {
+  padding: 3% 12%;
+}
+a {
+  color: black;
+}
+button {
+  font-size: x-small;
+  margin-right: 2%;
+}
+.item {
+  display: flex;
+  flex-flow: row;
+}
+.sofa {
+  width: 500px;
+}
+.details {
+  padding-left: 7%;
+}
+.checked {
+  color: #00d19b;
+}
+.cart {
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 16px 10%;
+}
+.wishlist {
+  background-color: white;
+  border-radius: 0;
+  border: 1px solid black;
+  padding: 15px 10%;
+}
+.footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.footer_content {
+  width: 350px;
+  padding-right: 12%;
+}
